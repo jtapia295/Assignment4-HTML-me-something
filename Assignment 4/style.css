@@ -1,2 +1,37 @@
-﻿body {
+﻿#logo {
+    float: left;
+    padding-right: 15px;
+    width: 60px;
+    height: 65px;
+}
+
+#sitename {
+    padding: 15px 5px 5px 40px;
+   color:orangered;
+}
+#navbar {
+    font-style:normal;
+    text-align: center;
+}
+
+
+.header {
+    
+}
+
+.TopBody{
+    padding-top:80px;
+    text-align: center;
+    font-size:60px;
+}
+
+.body1 {
+    padding: 80px 80px 1px 80px;
+    text-align: center;
+    font-size: 40px;
+}
+body {
+    padding-left: 10PX;
+    padding-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
