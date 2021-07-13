@@ -17,14 +17,14 @@ header {
     margin:0px;
     padding-left: 0;
     padding-right: 0;
-    background-color: #727272;
+    background-color: #9E9B9B;
 }
 header ul{
     list-style-type:none;
     margin:0;
     padding:0;
     overflow: hidden;
-    background-color: #727272;  
+    background-color: #9E9B9B;  
 }
 header li {
     float: right;
@@ -52,9 +52,12 @@ header li a:hover{
 	height:426.5px;
 	border: 1px solid #8E8E8E;
 	display:flex-center;
-	
-
-	
+	border-bottom-left-radius: 250px;
+	border-top-left-radius: 250px;
+	border-bottom-right-radius: 250px;
+	border-top-right-radius: 250px;
+	border: #120072 10px double;
+	background-clip: content-box;
 }
 .TopBody img:hover{
 		animation: imgmove 1s infinite;
@@ -64,16 +67,12 @@ header li a:hover{
 		transform: scale(1.01);
 	}
 }
-
-
 .TopBody h5 em{
 	color:red;
 }
-
 .TopBody h5:hover{
 	animation: textshake 0.5s infinite;
 }
-
 @keyframes textshake{
 	60%{
 		transform: rotateX(20deg);
@@ -81,15 +80,95 @@ header li a:hover{
 	}
 }
 
+
+
+
+
+
+main{
+	
+	height: 135em;
+		
+}
+
+
 main article{
 	text-align: center;
+	width: 45%;
+	overflow:inherit;
+	border-bottom-left-radius: 50px;
+	border-top-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	border-top-right-radius: 50px;
+	anima
 	
 }
 main article li{
 	list-style-type: none;
 }
+
+.missionstatement{
+	border: thick;
+	position: absolute;
+	font-size: 1vw;
+	top: 85%;
+	left: 10%;
+	color: beige;
+	background-color: hsla(28,100%,34%,0.73);
+	
+}
+
+.About-us{
+	font-size: 1vw;
+	position: absolute;
+	top: 97%;
+	right:10%;
+	color: hsla(0,0%,100%,1.00);
+	background-color: hsla(235,40%,33%,0.79);
+	line-height: 45px;
+}
+
+.corevalue{
+	position: absolute;
+	width: 100%;
+	font-size: 1vw;
+	top: 180%;
+	color: black;
+	background-color: hsla(35,43%,46%,0.70);
+}
+
+.goals{
+    font-size: 1vw;
+	position: absolute;
+	top: 120%;
+	right:52%;
+	color: hsla(0,0%,100%,1.00);
+	background-color: hsla(30,55%,62%,0.79);
+	line-height: 45px;
+}
+
+.offerings{
+	font-size:1vw;
+	position: absolute;
+	top: 145%;
+	right:8%;
+	color: hsla(0,0%,100%,1.00);
+	background-color: hsla(30,74%,52%,0.79);
+	line-height: 45px;
+}
+
+
+
+
+
+
+
+
+
 body {
     font-family: Arial, Helvetica, sans-serif;
+	margin:0;
+/*	background-color: #9A9999;*/
 }
 
 footer{
