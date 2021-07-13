@@ -1,27 +1,58 @@
-﻿#logo {
+﻿header #logo {
     float: left;
-    padding-right: 15px;
+    padding-left: 2em;
+    padding-top: 0.2%;
+    padding-right:1%;
     width: 60px;
     height: 65px;
 }
 
-#sitename {
-    padding: 15px 5px 5px 40px;
-   color:orangered;
-}
-#navbar {
-    font-style:normal;
-    text-align: center;
+
+header #sitename {
+    float:left;
+    padding:0;
+    color:orangered;
+/*    text-shadow: 3px 3px 10px black, 0 0 0.1em grey, 0 0 0.1em black;*/
 }
 
 
 header {
-    padding-left: 10PX;
-    padding-right: 10px;
+    margin:0px;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #333;
+}
+#navbar{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    background-color: #333;
+    
 }
 
+.nav {
+    float: right;
+}
+
+.nav a {
+    font-size:110%;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 30px 32px;
+    text-decoration: none;
+}
+.nav a:hover{
+    background-color:#111;
+}
+
+
+
+
+
 .TopBody{
-    padding-top:80px;
+    padding-top:5%;
     text-align: center;
     font-size:60px;
 }
