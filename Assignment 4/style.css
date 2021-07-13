@@ -1,28 +1,35 @@
 ﻿header #logo {
     float: left;
-    padding-left: 2em;
-    padding-top: 0.4%;
+    padding-left: 3em;
+    padding-top: 3%;
     padding-right:1%;
     width: 60px;
     height: 65px;
 }
 header #sitename {
     float:left;
-    padding:0;
-    color:orangered;
+    margin-left:15px;
+	margin-right: 10px;;
+    color:hsla(17,48%,53%,1.00);
     font-size: 190%;
-    text-shadow: 3px 3px 10px black, 0 0 0.1em grey, 0 0 0.1em black;
+    text-shadow: 0px 3px 8px black, 0 0 0.1em grey, 0 0 0.1em black;
 }
 header {
-    margin:0px;
-    padding-left: 0;
-    padding-right: 0;
+	position:fixed;
+	display:flex;
+	width:100%;
+	left:0;
+	top:0;
+	z-index: 1;
     background-color: #9E9B9B;
+	box-shadow:  0px 1px 10px black
 }
 header ul{
+	justify-content: flex-end;
+	
     list-style-type:none;
     margin:0;
-    padding:0;
+    padding-left:300px;
     overflow: hidden;
     background-color: #9E9B9B;  
 }
@@ -41,9 +48,8 @@ header li a:hover{
     background-color:#6C6C6C;
 }
 
-
 .TopBody{
-    padding-top:1%;
+    padding-top:3%;
     text-align: center;
     font-size:60px;
 }
@@ -58,20 +64,15 @@ header li a:hover{
 	border-top-right-radius: 250px;
 	border: #120072 10px double;
 	background-clip: content-box;
-}
-.TopBody img:hover{
-		animation: imgmove 1s infinite;
-}
-@keyframes imgmove{
-	50%{
-		transform: scale(1.01);
-	}
+	animation: increase 1s infinite;
+	animation-iteration-count: 1;
 }
 .TopBody h5 em{
 	color:red;
 }
 .TopBody h5:hover{
 	animation: textshake 0.5s infinite;
+	
 }
 @keyframes textshake{
 	60%{
@@ -79,19 +80,17 @@ header li a:hover{
 		transform: rotateY(20deg);
 	}
 }
-
-
-
-
-
-
-main{
-	
-	height: 135em;
-		
+iframe{
+	margin-left: 37.5%;
+	margin-top: 2%;
+	border: thick hsla(359,77%,32%,1.00);
+	animation: increase 1s infinite;
+	animation-iteration-count: 1;
 }
 
-
+main{
+	height: 117.2em;		
+}
 main article{
 	text-align: center;
 	width: 45%;
@@ -100,8 +99,16 @@ main article{
 	border-top-left-radius: 50px;
 	border-bottom-right-radius: 50px;
 	border-top-right-radius: 50px;
-	anima
-	
+	animation: increase 1s infinite;
+	animation-iteration-count: 1;
+}
+@keyframes increase{
+	0%{
+	transform: scale(0,30%);
+	}
+	30%{
+		tranform:scale(0,100%)
+	}
 }
 main article li{
 	list-style-type: none;
@@ -111,17 +118,16 @@ main article li{
 	border: thick;
 	position: absolute;
 	font-size: 1vw;
-	top: 85%;
+	top: 120%;
 	left: 10%;
 	color: beige;
 	background-color: hsla(28,100%,34%,0.73);
 	
 }
-
 .About-us{
 	font-size: 1vw;
 	position: absolute;
-	top: 97%;
+	top: 132%;
 	right:10%;
 	color: hsla(0,0%,100%,1.00);
 	background-color: hsla(235,40%,33%,0.79);
@@ -132,43 +138,34 @@ main article li{
 	position: absolute;
 	width: 100%;
 	font-size: 1vw;
-	top: 180%;
-	color: black;
+	top: 221%;
+	color: hsla(220,75%,97%,0.88);
+	border-bottom-left-radius: 0px;
+	border-top-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-right-radius: 0px;
 	background-color: hsla(35,43%,46%,0.70);
 }
-
+#core-values li{
+	display: inline;
+}
 .goals{
     font-size: 1vw;
 	position: absolute;
-	top: 120%;
+	top: 158%;
 	right:52%;
 	color: hsla(0,0%,100%,1.00);
 	background-color: hsla(30,55%,62%,0.79);
 	line-height: 45px;
 }
-
 .offerings{
 	font-size:1vw;
 	position: absolute;
-	top: 145%;
+	top: 180%;
 	right:8%;
 	color: hsla(0,0%,100%,1.00);
 	background-color: hsla(30,74%,52%,0.79);
 	line-height: 45px;
-}
-
-
-
-
-
-
-
-
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-	margin:0;
-/*	background-color: #9A9999;*/
 }
 
 footer{
@@ -189,6 +186,12 @@ footer ul{
 footer li{
 	float:left;
 }
+#copyright{
+	padding-top: 35px;
+	padding-right: 20px;
+	color: white;
+	float: right;
+}
 footer a{
 	font-size: 110%;
 	display:block;
@@ -198,4 +201,10 @@ footer a{
 }
 footer a:hover{
 	background-color: #6C6C6C
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+	margin:0;
+/*	background-color: #9A9999;*/
 }
