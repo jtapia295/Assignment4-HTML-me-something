@@ -15,8 +15,9 @@
 }
 
 
-.header {
-    
+header {
+    padding-left: 10PX;
+    padding-right: 10px;
 }
 
 .TopBody{
@@ -31,7 +32,13 @@
     font-size: 40px;
 }
 body {
-    padding-left: 10PX;
-    padding-right: 10px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+footer{
+    padding-left:0px;
+    padding-right:0px;
+    text-align:center;
+    background-color: dimgrey;
+    vertical-align:auto;
 }
