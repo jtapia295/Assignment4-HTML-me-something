@@ -1,75 +1,122 @@
 ﻿header #logo {
     float: left;
     padding-left: 2em;
-    padding-top: 0.2%;
+    padding-top: 0.4%;
     padding-right:1%;
     width: 60px;
     height: 65px;
 }
-
-
 header #sitename {
     float:left;
     padding:0;
     color:orangered;
-/*    text-shadow: 3px 3px 10px black, 0 0 0.1em grey, 0 0 0.1em black;*/
+    font-size: 190%;
+    text-shadow: 3px 3px 10px black, 0 0 0.1em grey, 0 0 0.1em black;
 }
-
-
 header {
     margin:0px;
     padding-left: 0;
     padding-right: 0;
-    background-color: #333;
+    background-color: #727272;
 }
-#navbar{
+header ul{
     list-style-type:none;
     margin:0;
     padding:0;
     overflow: hidden;
-    background-color: #333;
-    
+    background-color: #727272;  
 }
-
-.nav {
+header li {
     float: right;
 }
-
-.nav a {
+header li a {
     font-size:110%;
     display: block;
     color: white;
-    text-align: center;
+/*    text-align: center;*/
     padding: 30px 32px;
     text-decoration: none;
 }
-.nav a:hover{
-    background-color:#111;
+header li a:hover{
+    background-color:#6C6C6C;
 }
-
-
-
 
 
 .TopBody{
-    padding-top:5%;
+    padding-top:1%;
     text-align: center;
     font-size:60px;
 }
+.TopBody img{
+	width:640px; 
+	height:426.5px;
+	border: 1px solid #8E8E8E;
+	display:flex-center;
+	
 
-.body1 {
-    padding: 80px 80px 1px 80px;
-    text-align: center;
-    font-size: 40px;
+	
+}
+.TopBody img:hover{
+		animation: imgmove 1s infinite;
+}
+@keyframes imgmove{
+	50%{
+		transform: scale(1.01);
+	}
+}
+
+
+.TopBody h5 em{
+	color:red;
+}
+
+.TopBody h5:hover{
+	animation: textshake 0.5s infinite;
+}
+
+@keyframes textshake{
+	60%{
+		transform: rotateX(20deg);
+		transform: rotateY(20deg);
+	}
+}
+
+main article{
+	text-align: center;
+	
+}
+main article li{
+	list-style-type: none;
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
 footer{
-    padding-left:0px;
+	padding-left:0px;
     padding-right:0px;
-    text-align:center;
     background-color: dimgrey;
-    vertical-align:auto;
+   
+}
+footer ul{
+	
+	margin: 0;
+	padding:0;
+	overflow: hidden;
+	list-style-type: none;  
+	
+    background-color: dimgrey;
+}
+footer li{
+	float:left;
+}
+footer a{
+	font-size: 110%;
+	display:block;
+	padding: 30px 32px;
+	color: white;
+	text-decoration: none;
+}
+footer a:hover{
+	background-color: #6C6C6C
 }
